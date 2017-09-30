@@ -4,4 +4,4 @@ nltk==3.2.1
 apiai
 watson_developer_cloud
 twilio
-mysql
+mysql.connector
