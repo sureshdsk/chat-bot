@@ -5,4 +5,4 @@ apiai
 watson_developer_cloud
 twilio
 mysql-connector==2.1.4
-sklearn
+scikit-learn
