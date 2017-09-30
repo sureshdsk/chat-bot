@@ -1,3 +1,6 @@
 Flask==0.10.1
 Requests==2.5.1
 nltk==3.2.1
+apiai
+watson_developer_cloud
+twilio
