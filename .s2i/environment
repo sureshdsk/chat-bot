@@ -1,2 +1,1 @@
-APP_MODULE=wsgi:app
-APP_CONFIG=gunicorn.conf
+APP_CONFIG=config.py
