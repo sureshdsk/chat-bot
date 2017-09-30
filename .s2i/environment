@@ -1,1 +1,1 @@
-APP_MODULE=wsgi:app
+APP_MODULE=flaskapp:app
