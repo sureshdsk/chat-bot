@@ -17,7 +17,6 @@ from watson_developer_cloud import LanguageTranslatorV2 as LanguageTranslator
 from twilio.rest import TwilioRestClient
 from twilio import twiml
 import numpy as np
-from sklearn.linear_model import LinearRegression
 from watson_developer_cloud import ConversationV1
 
 app = Flask(__name__)
@@ -756,14 +755,14 @@ def webhookfb():
                                                         olb_id=cur.fetchone()[0]                                                                                                        
                                                         cur.execute('select tran_amount from transaction_details where olb_id = %s'%(olb_id))
                                                         balance=cur.fetchall()
-                                                        date = [1,2,3,4]
-                                                        amount = [12,120,230,240]
-                                                        lr = LinearRegression()
-                                                        lr.fit(date,amount)
-                                                        b_0   = lr.intercept_
-                                                        coeff = lr.coef_
-                                                        pred = lr.predict(1)
-                                                        print pred
+                                                        #date = [1,2,3,4]
+                                                        #amount = [12,120,230,240]
+                                                        #lr = LinearRegression()
+                                                        #lr.fit(date,amount)
+                                                        #b_0   = lr.intercept_
+                                                        #coeff = lr.coef_
+                                                        #pred = lr.predict(1)
+                                                        #print pred
                                                         print balance.replace("(", "").replace(")","").split(',')
                                                         out_msg = 'You might need $%s based on your past history.'%(balance)                                                       
                                                 else:                                                        
